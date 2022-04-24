@@ -1,7 +1,299 @@
 #menu
 {
 	position: fixed;
+  position: relative;
 	width: 100%;
 	height: 35px;
-	background: white;
+	
 }
+.logo{
+  position: absolute;left:0%;top:0%;
+  border-radius: 150px;
+}
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgb(161, 78, 161);
+    
+    list-style-type: none;
+    display: block;
+    width: 0px;
+    display: inline;
+    padding: 20px 46px;
+    border-style: solid;
+    border-width: 0px;
+    font-family: papyrus;
+    
+}
+li a:hover {
+    
+     font-weight: bolder ;
+  }
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-left: -40px;
+  margin-right: 283px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+  position:absolute;bottom:40%;right:-65%;
+}
+
+.prev {
+  border-radius: 3px 0 0 3px;
+  position:absolute;bottom:40%;left:0%;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(161, 78, 161);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(161, 78, 161);
+  font-size: 12px;
+  padding: 8px 12px;
+  top: -30;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.box{
+  float:left;
+  margin-right: 20px;
+}
+.clear{
+  clear:both
+}
+text1{
+  font-family: papyrus;
+  font-size: xx-large;
+  color: rgb(94, 24, 94);
+  text-decoration:double;
+  
+}
+text2{
+  font-style: italic;
+  text-align: right;
+  direction: rtl;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+text3{
+  font-family: papyrus;
+}
+text4{
+  font-family: papyrus;
+  color: rgb(94, 24, 94);
+  font-size: large;
+  padding-top: 50px;
+
+
+}
+
+text5{
+  font-style: italic;
+  text-align: right;
+  direction: rtl;
+  color: rgb(94, 24, 94);;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* page */
+body{
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(202, 193, 193);
+}
+#con{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+textarea {
+  margin-left: 50px;
+  resize: none;
+  margin-top: 10px;
+  box-sizing: content-box;
+  width: calc(100% - 6px);
+  border: 1px solid black;
+}
+
+
+
+
+.full-width {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+  .justify-content-center {
+    display: flex;
+    align-self: center;
+    width: 100%;
+  }
+  .lead.emoji-picker-container {
+    width: 300px;
+    display: block;
+    height: 100px;
+  }
+    
+    input {
+      width: 50%;
+      height: 50px;
+    }
+  
+
+
+
+    .emoji-drawer {
+      display: grid;
+  
+      grid-template-columns: repeat(3, 1fr);
+  
+      width: 100px;
+  
+      margin-bottom: 32px;
+      transition: opacity 0.2s;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .emoji {
+      text-align: center;
+      font-size: 24px;
+      padding: 8px;
+  }
+
+  .emoji-drawer {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100px;
+
+    margin-bottom: 32px;
+    transition: opacity 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.emoji {
+    text-align: center;
+    font-size: 24px;
+    padding: 8px;
+}
+
+.emoji:hover {
+    cursor: pointer;
+    background-color: cornsilk;
+}
+.emo{
+  width: 123px;
+  background-color: plum;
+  font-family: papyrus;
+  
+}
+.name{
+  width: 200px;
+  height: 20px;
+  font-family: papyrus;
+  
+}
+
+.comment{
+  width: 400px;
+  height: 20px;
+  font-family: papyrus;
+}
+
+.submit{
+  width: 60px;
+  height: 25px;
+  font-family: papyrus;
+}
+.box{
+position:relative;
+}
+.video-mask{
+  width: 390px;
+  height: 360px;
+  border-radius: 200px; 
+  position:absolute; right:-170px;
+  overflow: hidden; 
+}
+
